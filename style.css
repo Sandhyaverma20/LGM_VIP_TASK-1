@@ -1,0 +1,749 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*---------------------------home-------------------*/
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.header h2{
+    text-align:left;
+    padding-left: 210px;
+
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 12px 18px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+
+}
+
+.logo a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-left: 100px
+    
+}
+.nav-links ul li a:hover::after{
+    color:rgb(252, 252, 1) ;
+
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:rgb(252, 252, 1);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+    color:rgb(252, 252, 1) ;
+
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+
+}
+
+.text-box h1{
+    font-size: 62px;
+    font-weight: 600;
+    margin-left: -8px;
+
+}
+
+.text-box p{
+    margin: 20px 0 40px;
+    font-size:700;
+}
+
+.here-btn{
+    display: inline-block;
+    text-decoration: none;
+    color:rgb(7, 5, 5);
+    padding: 12px 34px;
+    font-size: 13px;
+    background:rgb(252, 252, 1);
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+.here-btn2{
+    display: inline-block;
+    text-decoration: none;
+    color:#fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background:rgb(85, 5, 85);
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+.here-btn2:hover{
+
+    background:rgb(252, 252, 1);
+    color: rgb(5, 3, 3);
+    transition: 0.5s;
+}
+
+
+
+
+.here-btn:hover{
+    background:rgb(85, 5, 85);
+    color:#fff;
+    transition: 0.5s;
+}
+
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 9px 4px ;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+nav .fa{
+    display: none;
+}
+
+
+
+
+
+
+ /*--------------------welcome to zippy----------------*/
+
+
+
+ .home{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+
+}
+.home p{
+    text-align:left;
+    padding: 50px 0 40px;
+    font-size: large;
+    font-weight: 400;
+
+
+}
+
+
+.row p{
+    color: rgb(15, 13, 13);
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    justify-content:space-between;
+    margin-top:5%;
+
+}
+.welcome{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.row img{
+    height: 50px;
+}
+.welcome-row{
+    display: flex;
+    margin-top:5%;
+    justify-content:space-between;
+
+}
+.welcome-row img{
+    height: 200px;
+    
+   
+}
+.home-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 30px 10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    align-items: center;
+
+}
+.row h3{
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 10px 0;
+    color:rgb(85, 5, 85);
+
+}
+.home-col:hover{
+    box-shadow:0 0 20px 0px rgba(0,0,0,0.2) ;
+}
+
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+    
+    .welcome-row img{
+        height: 0px;
+    }
+}
+
+
+
+/*----------------------------project----------------*/
+
+
+
+
+.projects{
+    width: auto;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+.projects-col img{
+    width: 100%;
+    height: 400px;
+}
+
+.projects-col p{
+    padding-left: 40px;
+    text-align: left;
+
+}
+.projects-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+    padding-left: 40px;
+    
+}
+
+
+.projects-col{
+    flex-basis: 31%;
+    background: rgba(221, 221, 221, 0.918);
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.5s;
+    text-align:center;
+    padding-bottom: 30px;
+
+}
+
+.projects-col:hover{
+    flex-basis: 31%;
+    background:rgb(252, 252, 1);
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.5s;
+    text-align:center;
+    padding-bottom: 30px;
+
+    
+}
+
+
+.here-btn3{
+    display: inline-block;
+    text-decoration: none;
+    color:rgba(5, 5, 5, 0.925);
+    padding: 12px 24px;
+    font-size: 15px;
+    background: #fff;
+    position: relative;
+    cursor: pointer;
+    text-align: left;
+}
+
+
+.here-btn3:hover{
+    border: 1px solid rgb(5, 3, 3);
+    background:rgb(85, 5, 85);    
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+/*--------------------------------pricing table-------------*/
+
+
+.home h4{
+    color: rgb(133, 132, 132);
+    font-weight: 300;
+}
+
+
+
+
+/*------------------------------video projects---------------*/
+
+
+
+
+.video{
+    width: auto;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background:rgb(85, 5, 85);
+
+
+}
+
+.video-col video{
+    height: 200px;
+    width: 100%;
+}
+.video h1{
+    color: #fff;
+}
+
+
+.video-col{
+    flex-basis: 31%;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    text-align:center;
+
+}
+.video-col h5{
+    color: #fff;
+    font-size: 8px;
+    text-align: left;
+    font-weight: 100;
+}
+
+
+
+
+
+/*------------------------------zippy team-----------------*/
+
+
+
+
+.team{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+.team h3{
+    color:rgb(0, 0, 0) ;
+    font-weight: 700;
+}
+
+
+
+.team h4{
+    color: rgb(133, 132, 132);
+    font-weight: 300;
+    font-size: smaller;
+}
+.team img{
+    height: 80px;
+    border-radius: 50%;
+}
+.team img:hover{
+    background:rgb(66, 57, 66);
+
+
+}
+
+.row2{
+    display: flex;
+    justify-content:space-between;
+    margin-top:5%;
+    align-items: center;
+
+}
+
+.row2 h4{
+    color: rgb(133, 132, 132);
+    font-weight: 300;
+}
+.row2 h3{
+    font-size: 15px;
+}
+
+@media(max-width:700px){
+    .row2{
+        flex-direction: column;
+    }
+}
+
+
+/*---------------------life in zippy--------------*/
+
+.life h1{
+    text-align: center;
+    padding-top: 20px;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+    background: rgb(199, 197, 197);
+
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 15px;
+    margin-top: -50px;
+    color: rgb(252, 248, 248);
+    background-color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(170, 168, 153, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+
+/*----------------------signup----------------------*/
+
+
+
+
+.signup{
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/bridge.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    margin-top: 50px;
+}
+.signup h1{
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.signup input{
+    padding: 6px;
+    width: 400px;
+    text-align: left;
+}
+.signup a{
+    font-size: 10px;
+    font-weight: 400;
+}
+ here-btn here-btn2{
+    padding-top: 30px;
+}
+
+
+
+
+
+/*-------------------blog----------------------*/
+
+
+
+.blog{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+.blog-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.blog-col img{
+    width: 100%;
+    height: 200px;
+}
+
+.blog-col p{
+    padding-bottom: 10px;
+
+}
+.blog-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #000;
+    
+}
+
+.blog h4{
+    color: rgb(133, 132, 132);
+    font-weight: 300;
+    font-size: 10px;
+    padding-bottom: 8px;
+}
+
+
+
+
+/*=------------------contact--------------*/
+
+
+.contact{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background:rgb(252, 252, 1);
+    padding-left: 40px;
+
+}
+.contact-col{
+    flex-basis: 44%;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    background:rgb(252, 252, 1);
+
+}
+
+
+.contact-col img{
+    height: 499px;
+    width: 950px;
+    margin-right: 50px;
+    padding-top: 4px;
+    margin-left: 0px;
+}
+
+.contact-col h1{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+
+input[type=text], textarea {
+    width: 100%; 
+    padding: 5px; 
+    border: 1px solid #ccc;
+    border-radius: 2px; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+  }
+
+  input[type=submit] {
+    background-color:rgb(85, 5, 85);
+    color: white;
+    padding: 12px 100px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  .container {
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+@media(max-width:700px){
+    .contact-col img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+
+}
+
+
+
+/*--------------------------footer------------------*/
+
+.footer{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+
+}
+.footer h3{
+    font-size: smaller;
+    font-weight: 600;
+}
+.footer h4{
+    font-size: 10px;
+    padding-bottom: 8px;
+}
+.fa {
+    font-size: 70px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+/* Facebook */
+.fa-facebook {
+    color:#3b5998 ;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    color:#1DA1F2;
+  }
+/* linkedin*/
+    .fa-linkedin {
+        color:#0e76a8 ;
+      }
+ /* instagram */
+    .fa-instagram {
+        color:linear-gradient(#F58529,#FEDA77,#DD2A7B,#8134AF,#515BD4);
+        padding-top: 7px;
+      }
